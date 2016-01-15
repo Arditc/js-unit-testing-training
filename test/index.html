@@ -3,20 +3,17 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="../node_modules/mocha/mocha.css" />
     <script src="http://localhost:35729/livereload.js?snipver=1"></script>
-  </head>
-  <body>
-    <div id="mocha"></div>
     <script src="../node_modules/mocha/mocha.js"></script>
     <script src="../node_modules/chai/chai.js"></script>
     <script src="../node_modules/sinon-chai/lib/sinon-chai.js"></script>
     <script src="../node_modules/sinon/pkg/sinon.js"></script>
     <script>
-      mocha.ui('bdd');
-      mocha.reporter('html');
-      var expect = chai.expect;
+      mocha.setup('bdd');
     </script>
     <script src="../build/test.js"></script>
-
+  </head>
+  <body>
+    <div id="mocha"></div>
     <!-- kick off tests -->
     <script>
       mocha.run()

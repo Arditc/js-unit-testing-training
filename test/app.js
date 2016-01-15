@@ -1,3 +1,4 @@
+var expect = chai.expect;
 var App = require('../src/app.js');
 
 describe('App', function(){
