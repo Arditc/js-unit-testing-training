@@ -38,30 +38,6 @@ describe('Callback', function(){
 		it('should return true', function () {
 			expect(callback).to.have.been.called;
 		});
-
-	  // var instance;
-    // var stub;
-    // var callback;
-    // beforeEach(function() {
-		//
-    // //  stub = sinon.stub();
-		// 	sinon.stub(request, 'get')
-    //   instance = new App();
-    //   instance.getData(stub);
-    // });
-		//
-		// afterEach(function () {
-		// 	request.get.restore();
-		// });
-		// //
-		// it('expects request.get to have been called with correct data', function () {
-		// 	expect(request.get).to.have.been.called;
-		// });
-		// //
-    // // it('runs the callback after getting the data from github', function () {
-    // //   expect(stub).to.have.been.called;
-    // // });
-
   });
 
 });
