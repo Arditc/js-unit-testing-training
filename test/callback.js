@@ -8,21 +8,21 @@ describe('Callback', function(){
 		expect(App).to.be.an.instanceOf(Function);
 	});
 
-	describe('constructor', function(){
+	describe('constructor', function() {
     var instance;
     beforeEach(function () {
       instance = new App();
     });
 
-		it('creates the correct instance', function(){
+		it('creates the correct instance', function() {
 			expect(instance).to.be.an.instanceOf(App);
 		});
 	});
 
-  describe('getData', function () {
+  describe('getData', function() {
 		var callback;
 
-		beforeEach(function () {
+		beforeEach(function() {
 			callback = sinon.stub();
 			sinon.stub(request, 'get').returns({
 				end: sinon.stub().callsArg(0)
@@ -31,11 +31,11 @@ describe('Callback', function(){
 			instance.getData(callback);
 		});
 
-		afterEach(function () {
+		afterEach(function() {
 			request.get.restore();
 		});
 
-		it('should return true', function () {
+		it('should return true', function() {
 			expect(callback).to.have.been.called;
 		});
   });

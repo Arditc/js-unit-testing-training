@@ -28,11 +28,3 @@ Bus.prototype.howManyPassengers = function(){
 Bus.prototype.howManySeatsLeft = function(){
   console.log(this.seats - this.passengers);
 };
-
-//---------------------- TESTING -----------------//
-var Bus1 = new Bus(6, 30, 3);
-Bus1.howManyPassengers();
-Bus1.working();
-Bus1.amountOfPeopleVehicleCanCarry();
-Bus1.howManySeatsLeft();
-console.log(Bus1 instanceof Vehicle);
